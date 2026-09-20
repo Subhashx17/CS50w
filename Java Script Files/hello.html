@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+
+        <title>Hello</title>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+
+                document.querySelector('form').onsubmit = function(){
+                    const lol = document.querySelector('#name').value;
+                    alert(`Hello , ${lol}`);
+                };
+            });
+         </script>
+
+    </head>
+
+
+
+    <body>
+        <h1>Hellowww!</h1>
+        <button onclick="hello()">click here</button>
+        <form>
+            <input autofocus id="name" placeholder="Name" type="text">
+            <input type="submit">
+        </form>
+    </body>
+</html>
